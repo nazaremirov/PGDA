@@ -46,13 +46,3 @@ def PGDA(H,y,max_iter):
         x = x - np.dot(G,e)
     
     return x
-
-########### TEST ##################3                 
-  
-H=np.array([[7,1,0],[-1,2,0],[0,0,5]])
-
-f=np.array([1,2,-3])
-y=np.dot(H,f)
-
-
-print(PGDA(H,y,400))
