@@ -1,5 +1,4 @@
 import numpy as np
-#from numpy.linalg import matrix_power
 
 def Distributed_inv_approx(H):
     
@@ -34,10 +33,3 @@ def PGDA_eigvector_approx(A, eig_value, max_iter):
     for m in range(max_iter):
         x = np.dot(np.identity(N) - np.matmul(G, H), x)   
     return x
-                 
-#  ############## TEST #############
-    
-# H=np.array([[7,1,0],[-1,2,0],[0,0,5]])
-
-
-# print(PGDA_eigvector_approx(H,1,400))
